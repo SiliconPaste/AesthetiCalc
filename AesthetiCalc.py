@@ -1,13 +1,16 @@
 import customtkinter
 from widgets.buttons import *
 from widgets.textbox import *
+from PIL import Image
 
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         self.geometry("350x550")
-        self.title("calculator")
-        # create 4x6 grid system
+        self.attributes('-alpha',0.78)
+        self.title("AesthetiCalc")
+        self.iconbitmap(r"design_files\favicon.ico")
+      # create 4x6 grid system
         self.grid_columnconfigure((0),weight=1)
         self.grid_rowconfigure((1),weight=1)
         
